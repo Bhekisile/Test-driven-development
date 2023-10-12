@@ -104,7 +104,7 @@ rspec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add more test cases that require to mock]**
+- [ ] **[Add more test cases]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
