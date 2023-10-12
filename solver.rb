@@ -10,6 +10,6 @@ class Solver
   end
 
   def reverse(str)
-    
+    str.split('').reverse.join('')
   end
 end
