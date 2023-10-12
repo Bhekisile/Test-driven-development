@@ -12,4 +12,8 @@ class Solver
   def reverse(str)
     str.split('').reverse.join('')
   end
+
+  def fizzbuzz(int)
+    
+  end
 end
