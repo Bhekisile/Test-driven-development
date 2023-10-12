@@ -14,7 +14,7 @@ describe Solver do
     end
 
     it 'raise argumenTError when number is negative' do
-      expect(subject.factorial(-1)).to raise(ArgumentError)
+      expect { subject.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
 
