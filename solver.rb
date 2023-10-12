@@ -10,15 +10,15 @@ class Solver
   end
 
   def reverse(str)
-    str.split('').reverse.join('')
+    str.chars.reverse.join
   end
 
   def fizzbuzz(int)
-    if int % 15 == 0
+    if (int % 15).zero?
       'fizzbuzz'
-    elsif int % 5 == 0
+    elsif (int % 5).zero?
       'buzz'
-    elsif int % 3 == 0
+    elsif (int % 3).zero?
       'fizz'
     else
       int.to_s
