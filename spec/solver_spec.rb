@@ -13,8 +13,8 @@ describe Solver do
       expect(subject.factorial(0)).to eq(1)
     end
 
-    it "raises an exception when number is less than zero" do
-      expect { subject.factorial(-1) }.to raise (ArgumentError)
+    it "return one when number is zero" do
+      expect(subject.factorial(-1)).to raise (ArgumentError)
     end
   end
 end
