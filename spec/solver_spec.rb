@@ -37,5 +37,9 @@ describe Solver do
       expect(subject.fizzbuzz(15)).to eq('fizzbuzz')
       expect(subject.fizzbuzz(45)).to eq('fizzbuzz')
     end
+    it "return stringified number when number is not divisible  by both 3 and 5 or either" do
+      expect(subject.fizzbuzz(7)).to eq('7')
+      expect(subject.fizzbuzz(2)).to eq('2')
+    end
   end
 end
