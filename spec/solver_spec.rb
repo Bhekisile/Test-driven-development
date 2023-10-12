@@ -23,4 +23,19 @@ describe Solver do
       expect(subject.reverse('hello')).to eq('olleh')
     end
   end
+
+  context "#fizzbuzz" do
+    it "return fizz when number is divisible only by 3" do
+      expect(subject.fizzbuzz(3)).to eq('fizz')
+      expect(subject.fizzbuzz(6)).to eq('fizz')
+    end
+    it "return buzz when number is divisible only by 5" do
+      expect(subject.fizzbuzz(5)).to eq('buzz')
+      expect(subject.fizzbuzz(10)).to eq('buzz')
+    end
+    it "return fizzbuzz when number is divisible  by 3 and 5" do
+      expect(subject.fizzbuzz(15)).to eq('fizzbuzz')
+      expect(subject.fizzbuzz(45)).to eq('fizzbuzz')
+    end
+  end
 end
