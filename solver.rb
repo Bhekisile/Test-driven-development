@@ -20,6 +20,8 @@ class Solver
       'buzz'
     elsif int % 3 == 0
       'fizz'
+    else
+      int.to_s
     end
   end
 end
